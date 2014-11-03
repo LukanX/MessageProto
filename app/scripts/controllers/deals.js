@@ -9,8 +9,8 @@
  */
 
 angular.module('MessagingApp')
-  .controller('dealsCtrl', ['$scope', '$routeParams', 'Deal', 'Merchant', '$filter',
-   function ($scope, $routeParams, Deal, Merchant, $filter) {
+  .controller('dealsCtrl', ['$scope', '$routeParams', 'Deal', 'Merchant', '$filter', '$timeout',
+   function ($scope, $routeParams, Deal, Merchant, $filter, $timeout) {
     $scope.deals = Deal.query({merchantId: $routeParams.merchantId});
 
     var merchants = Merchant.query();
@@ -22,6 +22,10 @@ angular.module('MessagingApp')
 
     $scope.showDetails = false;
     $scope.favorited = false;
-    $scope.showSection = true;
+    $scope.showChat = false;
+
+    $scope.chatCounter = $timeout(function(){
+      $scope.showChat = true;
+    }, 60000);
 
   }]);

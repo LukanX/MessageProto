@@ -14,6 +14,7 @@
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  z-index: 5;
 }
 .value-prop{
   padding-left: 32px;
@@ -303,5 +304,275 @@
   }
 }
 
+.radio-filters{
+  input[type="radio"]{
+    position: absolute;
+    left: -1000px;
+    & + label{
+      display: block;
+      padding: 6px 12px;
+      text-transform: capitalize;
+      color: #349dc5;
+      cursor: pointer;
+      &.icon-label{
+        padding-left: 38px;
+        font-size: 14px;
+        background-position: 8px center;
+        background-repeat: no-repeat;
+        border-bottom: 1px solid #d9d9d6;
+        &.all{
+          background-image: url(../images/icons/All.png);
+        }
+        &.code{
+          background-image: url(../images/icons/Codes.png);
+        }
+        &.sale{
+          background-image: url(../images/icons/Sales.png);
+        }
+        &.printable{
+          background-image: url(../images/icons/Printable.png);
+        }
+        &.free-shipping{
+          background-image: url(../images/icons/Free-Shipping.png);
+        }
+        &.bogo{
+          background-image: url(../images/icons/filter-icon_14.png);
+        }
+        &.cash-off{
+          background-image: url(../images/icons/cash-off.png);
+        }
+        &.percent-off{
+          background-image: url(../images/icons/percent-off.png);
+        }
+      }
+    }
+    &:checked + label{
+      border-radius: 6px;
+      background-color: #DFDFDF;
+      //margin-right: 18px;
+      position: relative;
+      border: none;
+      &:after{
+        content: '';
+        position: absolute;
+        border-left: 18px solid #DFDFDF;
+        border-right: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-top: 18px solid transparent;
+        top: 0;
+        right: -32px;
+      }
+    }
+  }
+}
+
+.full-width{
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+
+.merchant-bg{
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/test-bg.jpg);
+  position: relative;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blur-filter{
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.33);
+}
+
+.white-text{
+  color: white;
+}
+
+ul.top-coupons{
+  list-style: none;
+  padding: 0;
+  li{
+    color: #222;
+    display: inline-block;
+    background: white;
+    padding: 8px 12px;;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 16px;
+    span{
+      padding-left: 16px;
+    }
+  }
+}
+
+.dig-around{
+
+}
+
+.site-title.short{
+  padding-bottom: 8px;
+}
+
+.logo-wrapper.absolute{
+  position: absolute;
+}
+
+#wrapper2{
+  max-width: 984px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 984px;
+  padding-top: 36px;
+}
+
+.more-stores{
+  padding: 32px 16px 16px;
+  ul{
+    list-style: none;
+    padding: 0;
+    padding-top: 16px;
+    li{
+      text-align: center;
+      display: block;
+      margin-bottom: 32px;
+      .logo-area{
+        height: 120px;
+        width: 120px;
+        background: white;
+        margin: auto;
+        position: relative;
+        margin-bottom: 8px;
+        img{
+          width: 80%;
+          margin: auto;
+          position: absolute;
+          top: 0; left: 0; bottom: 0; right: 0;
+        }
+      }
+    }
+  }
+}
 
 
+.chat-options{
+  background: none;
+  border: none;
+  padding: 0;
+  h2{
+    padding-top: 16px;
+    font-size: 22px;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  li{
+    border: 1px solid #d9d9d6;
+    background-color: white;
+    width: 32%;
+    display: inline-block;
+    margin-right: 1.35%;
+    &:last-child{
+      margin-right: 0;
+    }
+    h3{
+      font-weight: bold;
+      padding-top: 80px;
+      &.home-decor{
+        background: url(../images/icons/chat-icons_03.png) no-repeat center 16px;
+      }
+      &.holiday{
+        background: url(../images/icons/chat-icons_05.png) no-repeat center 16px;
+      }
+      &.apparel{
+        background: url(../images/icons/chat-icons_07.png) no-repeat center 16px;
+      }
+    }
+    .consultant-blurb{
+      padding: 16px 20px 32px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .chat-button{
+      background: white;
+      border: 2px solid #259fc4;
+      padding: 8px 16px;
+      border-radius: 3px;
+      color: #259fc4;
+      width: 50%;
+      margin: auto;
+      cursor: pointer;
+      &:hover{
+        background: #259fc4;
+        color: white;
+      }
+    }
+    .availability{
+        padding: 16px;
+      }
+  }
+}
+
+
+.chat-alert-box{
+  position: fixed;
+  bottom: 0px;
+  right: 10%;
+  width: 300px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  transition: bottom .5s;
+  &.ng-hide{
+    bottom: -400px;
+  }
+  .top-bar{
+    padding: 16px;
+    background-color: #7AB320;
+    width: 100%;
+    position: relative;
+    color: white;
+    .x-out{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      color: #7AB320;
+      border-radius: 100%;
+      background: rgba(0,0,0,.4);
+      top: 16px;
+      right: 16px;
+      text-align: center;
+      line-height: 20px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+  .chat-section{
+    background-color: white;
+    padding: 16px 32px;
+    p{
+      font-size: 18px;
+      padding-top: 76px;
+      background: url(../images/lego-head.png) no-repeat center 8px;
+    }
+    .submit-wrapper{
+      margin: 16px auto;
+    }
+  }
+}

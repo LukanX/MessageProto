@@ -32,6 +32,10 @@ angular
         templateUrl: 'views/design1.html',
         controller: 'dealsCtrl'
       })
+      .when('/design2/:merchantId', {
+        templateUrl: 'views/design2.html',
+        controller: 'dealsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

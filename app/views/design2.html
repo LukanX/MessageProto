@@ -1,0 +1,246 @@
+
+<div class="full-width">
+		<div class="merchant-bg"></div><div class="blur-filter"></div>
+		<div id="wrapper" class="container clearfix parent-element">
+			<div class="major js-no-right-rail white-text">
+				<div class="clearfix">
+					<div class="major-heading-text">
+						<h1 class="site-title left short">Welcome to {{merchant.name}} Coupons</h1>
+					</div>
+				</div>
+				<div class="dig-around">We dug around and found that most {{merchant.name}} shoppers love these deals</div>
+					<ul class="top-coupons">
+						<li>Michael Kors Watches from $120 <span class = "faux-link">Use Now</span></li>
+						<li>Thanksgiving and Fall Décor from $30 <span class = "faux-link">Use Now</span></li>
+					</ul>
+			</div>
+			<div class="minor">
+
+				<div class="no-portrait">
+					<!-- LOGO -->
+					<a href="#" class="logo-wrapper absolute js-outclick-merchant-logo">
+						<img class="merchant-logo" ng-src="{{merchant.logo}}" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+</div>
+
+<div id="wrapper2" class="container clearfix parent-element padded-top">
+	<div class="major js-no-right-rail">
+
+			<!-- DEAL TILES -->
+			<div ng-repeat = "deal in deals | filter: typeFilter | orderBy: orderProp" ng-switch-on="$index">
+				
+				<div class="offer" ng-class="deal.type">
+					<!-- CODE THING -->
+					
+					<div ng-if="deal.verified == true">
+						<div class="anchor js-anchor">
+							<!-- <flip-contianer></flip-container> -->
+							<div class="flip-container">
+								<div class="flipper">
+									<div class="face front">
+										<div class="anchor-image no-image">
+											<div class="anchor-big-text">{{deal.value}}</div>
+											<div class="anchor-med-text">off</div>
+										</div>
+										<div class="additional-anchor">{{deal.type}}</div>
+									</div>
+
+									<div class="face back">
+										<div class="anchor-image no-image">
+											<div class="anchor-med-text">{{deal.type}}</div>
+										</div>
+										<div class="additional-anchor">verified</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div ng-if="deal.verified == false">
+						<div class="anchor js-anchor">
+							<div class="anchor-image no-image">
+								<div class="anchor-big-text">{{deal.value}}</div>
+								<div class="anchor-med-text">off</div>
+							</div>
+							<div class="additional-anchor">{{deal.type}}</div>
+						</div>
+					</div>
+
+					<!-- INFO -->
+					<div class="info js-info">
+							<span class="verified" ng-if="deal.verified == true">Verified 1 day ago &nbsp; • </span> {{deal.numberUsed}} People Used Today
+
+							<h3 class="title h1 js-title">
+								<a href="#">{{deal.description}}</a>
+							</h3>
+
+							<p class="share-expire">
+								<span class="dark-text">Ends </span> {{deal.expiration}}
+							</p>
+
+							<div class="description-wrapper js-wrapper js-toggle truncated">
+								<p class="description js-desc js-toggle truncated">
+									<span class="dark-text">Details: </span> {{deal.details}}
+								</p>
+							</div>
+
+							<p class="additional-info">
+								<span class="voting">
+									<span class="vote-up"></span>
+									<span class="vote-down"></span>
+								</span>
+								<span class="js-percent">{{deal.successRate}}%</span> Success &nbsp;•&nbsp;
+								<span class="comments-trigger js-comment"> Add a Comment</span>
+
+								<span class="additional-actions">
+									<span class="star-button star" data-starred="false">
+										<input type="checkbox" name="star" disabled="true">
+									</span>
+									<span class="email-button js-email"></span>
+									<span class="text-button js-text"></span>
+								</span>
+							</p>
+					</div>
+
+					<div class="actions js-actions" ng-model="deal.type" ng-switch on = "deal.type">
+						<div ng-switch-when="code" class="js-outclick smokey-button code-button js-attch-flash">
+							<div class="code-wrapper">
+								<span class="code-text">{{deal.code}}</span>
+							</div>
+							<div class="code-cover">Show Coupon Code</div>
+							<div class="code-fader"></div>
+							<div class="copy-icon"></div>
+						</div>
+						
+						<div ng-switch-when="printable" class="smokey-button js-outclick">Show Coupon</div>
+
+						<div ng-switch-default class="smokey-button js-outclick">Get Deal</div>
+					</div>
+				</div>
+					
+			</div>
+
+			<div class="offer chat-options clearfix">
+				<h2 class="center">Can't find the right coupon? Talk to our experts!</h2>
+				<ul>
+					<li>
+						<h3 class="center home-decor">Home Decor Consultant</h3>
+						<div class="consultant-blurb center">Our Experts will guide you through your savings options as you find the perfect coupon for your home accessories, décor, appliances, or furniture.</div>
+						<div class="chat-button center">Chat Now</div>
+						<p class="availability center">Available 9am-5pm Central</p>
+					</li>
+					<li>
+						<h3 class="center holiday">Holiday Consultant</h3>
+						<div class="consultant-blurb center">We can't wait to help you out with your holiday purchases. Our Shopping Specialists live for this time of year and are waiting to hear from you!.</div>
+						<div class="chat-button center">Chat Now</div>
+						<p class="availability center">Available 9am-5pm Central</p>
+					</li>
+					<li>
+						<h3 class="center apparel">Apparel Consultant</h3>
+						<div class="consultant-blurb center">Target always has fabulous deals on designer clothing online and in store.  Find out which deals are best for you by talking to the experts.</div>
+						<div class="chat-button center">Chat Now</div>
+						<p class="availability center">Available 9am-5pm Central</p>
+					</li>
+				</ul>
+				
+			</div>
+
+			<div class="competitor-links"> <div class="competitor-header"> We're confident we've found all the best Target coupons </div> <div class="links-box clearfix"> <div class="links-container"> <span class="h3">Feel free to check out our competitors:</span> <ul> <li><a href="http://www.techbargains.com/vendor_detail.cfm/302/Target-coupon-code" target="_blank" rel="nofollow" class="js-competitor-link">Tech Bargains</a></li> <li><a href="http://www.bradsdeals.com/stores/target-coupons" target="_blank" rel="nofollow" class="js-competitor-link">Brad's Deals</a></li> <li><a href="http://www.coupons.com/coupon-codes/target/" target="_blank" rel="nofollow" class="js-competitor-link">Coupons.com</a></li> </ul> </div> <div class="submit-container"> <span class="h3">If we're wrong, let us know what we missed.</span> <div class="submit-wrapper"> <a href="/submit?host=target.com" target="_blank" class="button-green">+ Submit A Coupon</a> </div> </div> </div> </div>
+			
+
+	</div>
+
+	<div class="minor">
+
+
+		<!-- FILTERS -->
+			<div class="radio-filters">
+				<input type="radio" ng-model="typeFilter" id="all" value="">
+				<label for="all" class="icon-label all">All <span ng-repeat="deal in all = (deals | filter: {discountType:''})"></span> ({{all.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="code" value="code">
+				<label for="code" class="icon-label code">Promo Codes <span ng-repeat="deal in codes = (deals | filter: {discountType:'code'})"></span> ({{codes.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="sale" value="sale">
+				<label for="sale" class="icon-label sale">Sales <span ng-repeat="deal in sales = (deals | filter: {discountType:'sale'})"></span> ({{sales.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="printable" value="printable">
+				<label for="printable" class="icon-label printable">Printables <span ng-repeat="deal in printables = (deals | filter: {discountType: 'printable'})"></span> ({{printables.length}})
+				</label> 
+
+				<input type="radio" ng-model="typeFilter" id="free-shipping" value="free shipping">
+				<label for="free-shipping" class="icon-label free-shipping">Free Shipping <span ng-repeat="deal in freeShipping = (deals | filter: {discountType: 'free shipping'})"></span> ({{freeShipping.length}})
+				</label> 
+
+				<input type="radio" ng-model="typeFilter" id="bogo" value="bogo">
+				<label for="bogo" class="icon-label bogo">Buy One Get One <span ng-repeat="deal in bogo = (deals | filter: {discountType: 'bogo'})"></span> ({{bogo.length}})
+				</label> 
+
+				<input type="radio" ng-model="typeFilter" id="$off" value="$off">
+				<label for="$off" class="icon-label cash-off">$ Off <span ng-repeat="deal in dollarOff = (deals | filter: {discountType:'$off'})"></span> ({{dollarOff.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="%off" value="%off">
+				<label for="%off" class="icon-label percent-off">% Off <span ng-repeat="deal in percentOff = (deals | filter: {discountType:'%off'})"></span> ({{percentOff.length}})
+				</label>
+
+			</div>
+
+			<!-- Other Stores -->
+
+			<div class="more-stores">
+				<h3 class="center">We can help you find deals at these other top stores:</h3>
+
+				<ul>
+					<li class="faux-link">
+						<div class="logo-area"><img src="images/logos/homedepot.jpg" alt=""></div>
+						<div>Home Depot</div>
+					</li>
+
+					<li class="faux-link">
+						<div class="logo-area"><img src="images/logos/best-buy.jpg" alt=""></div>
+						<div>Best Buy</div>
+					</li>
+
+					<li class="faux-link">
+						<div class="logo-area"><img src="images/logos/kohls.jpg" alt=""></div>
+						<div>Kohls</div>
+					</li>
+
+					<li class="faux-link">
+						<div class="logo-area"><img src="images/logos/macys.jpg" alt=""></div>
+						<div>Macy's</div>
+					</li>
+
+					<li class="faux-link">
+						<div class="logo-area"><img src="images/logos/joann.jpg" alt=""></div>
+						<div>Joann Fabric</div>
+					</li>
+				</ul>
+			</div>
+		
+		
+	</div>
+	<div class="chat-alert-box" ng-show="showChat">
+		<div class="top-bar">
+			Expert Coupon Chat
+			<div class="x-out" ng-click="showChat = false">x</div>
+		</div>
+		<div class="chat-section">
+			<p class="center">Hi there! Can we Help you find a code?</p>
+			<div class="submit-wrapper center">
+				<span class="button-green">Chat with us</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

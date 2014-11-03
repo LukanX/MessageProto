@@ -219,38 +219,7 @@
 	margin-right: 0;
 	}
 
-.radio-filters input[type="radio"]{
-	position: absolute;
-	left: -1000px;
-}
 
-.radio-filters input[type="radio"] + label{
-	display: block;
-	padding: 6px 12px;
-	text-transform: capitalize;
-	color: #349dc5;
-	cursor: pointer;
-}
-
-.radio-filters input[type="radio"]:checked + label{
-	border-radius: 6px;
-	background-color: #d6d6d9;
-	margin-right: 18px;
-	color: #666;
-	font-weight: 700;
-	position: relative;
-}
-
-.radio-filters input[type="radio"]:checked + label:after{
-	content: '';
-	position: absolute;
-	border-left: 18px solid #d6d6d9;
-	border-right: 18px solid transparent;
-	border-bottom: 18px solid transparent;
-	border-top: 18px solid transparent;
-	top: 0;
-	right: -32px;
-}
 
 #toggle-verify{
 	font-size: 16px;

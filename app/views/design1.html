@@ -1,320 +1,321 @@
-<div class="major js-no-right-rail">
-	<div class="major-header clearfix">
+<div id="wrapper" class="container clearfix parent-element">
+	<div class="major js-no-right-rail">
+		<div class="major-header clearfix">
 
-		<h1 class="site-title ">{{merchant.name}} Coupon Codes</h1>
-		<div class="value-prop everyday">No need to look anywhere else! We checked - these coupons are also available at 
-			<span class="hover-target">
-				<label for = "all-deals-hover" class="faux-link">12 other sites</label>
-				<input type="checkbox" id="all-deals-hover">
-				<div class="hover-menu above">
-					<ul>
-						<li class="faux-link">Coupons.com</li>
-						<li class="faux-link">Dealigg</li>
-						<li class="faux-link">savings.com</li>
-						<li class="faux-link">fatWallet</li>
-						<li class="faux-link">dealcatcher</li>
-						<li class="faux-link">bestdeals</li>
-						<li class="faux-link">Deals Plus</li>
-						<li class="faux-link">dealsea</li>
-						<li class="faux-link">dealjam</li>
-						<li class="faux-link">Brad's Deals</li>
-						<li class="faux-link">slickdeals</li>
-						<li class="faux-link">dealio</li>
-					</ul>
-				</div>
-			</span>
+			<h1 class="site-title ">{{merchant.name}} Coupon Codes</h1>
+			<div class="value-prop everyday">No need to look anywhere else! We checked - these coupons are also available at 
+				<span class="hover-target">
+					<label for = "all-deals-hover" class="faux-link">12 other sites</label>
+					<input type="checkbox" id="all-deals-hover">
+					<div class="hover-menu above">
+						<ul>
+							<li class="faux-link">Coupons.com</li>
+							<li class="faux-link">Dealigg</li>
+							<li class="faux-link">savings.com</li>
+							<li class="faux-link">fatWallet</li>
+							<li class="faux-link">dealcatcher</li>
+							<li class="faux-link">bestdeals</li>
+							<li class="faux-link">Deals Plus</li>
+							<li class="faux-link">dealsea</li>
+							<li class="faux-link">dealjam</li>
+							<li class="faux-link">Brad's Deals</li>
+							<li class="faux-link">slickdeals</li>
+							<li class="faux-link">dealio</li>
+						</ul>
+					</div>
+				</span>
+			</div>
+
+
 		</div>
 
-
-	</div>
-
-		<!-- DEAL TILES -->
-		<div ng-repeat = "deal in deals | filter: typeFilter" ng-switch on="$index">
-			
-			<div class="offer top" ng-class="deal.type">
-				<!-- CODE THING -->
-
-
+			<!-- DEAL TILES -->
+			<div ng-repeat = "deal in deals | filter: typeFilter" ng-switch on="$index">
 				
-				<div ng-if="deal.verified == true">
-					<div class="anchor js-anchor">
-						<div class="flip-container">
-							<div class="flipper">
-								<div class="face front">
-									<div class="anchor-image no-image">
-										<div class="anchor-big-text">{{deal.value}}</div>
-										<div class="anchor-med-text">off</div>
-									</div>
-									<div class="additional-anchor">{{deal.type}}</div>
-								</div>
+				<div class="offer top" ng-class="deal.type">
+					<!-- CODE THING -->
 
-								<div class="face back">
-									<div class="anchor-image no-image">
-										<div class="anchor-med-text">{{deal.type}}</div>
+
+					
+					<div ng-if="deal.verified == true">
+						<div class="anchor js-anchor">
+							<div class="flip-container">
+								<div class="flipper">
+									<div class="face front">
+										<div class="anchor-image no-image">
+											<div class="anchor-big-text">{{deal.value}}</div>
+											<div class="anchor-med-text">off</div>
+										</div>
+										<div class="additional-anchor">{{deal.type}}</div>
 									</div>
-									<div class="additional-anchor">verified</div>
+
+									<div class="face back">
+										<div class="anchor-image no-image">
+											<div class="anchor-med-text">{{deal.type}}</div>
+										</div>
+										<div class="additional-anchor">verified</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
 
-				<div ng-if="deal.verified == false">
-					<div class="anchor js-anchor">
-						<div class="anchor-image no-image">
-							<div class="anchor-big-text">{{deal.value}}</div>
-							<div class="anchor-med-text">off</div>
+					<div ng-if="deal.verified == false">
+						<div class="anchor js-anchor">
+							<div class="anchor-image no-image">
+								<div class="anchor-big-text">{{deal.value}}</div>
+								<div class="anchor-med-text">off</div>
+							</div>
+							<div class="additional-anchor">{{deal.type}}</div>
 						</div>
-						<div class="additional-anchor">{{deal.type}}</div>
+					</div>
+
+					<!-- FAVORITE START -->
+					<div class="favorite-star" ng-click="favorited = !favorited" ng-class="{active:favorited}"></div>
+
+					<!-- INFO -->
+					<div class="info js-info">
+							<span class="verified" ng-if="deal.verified == true">Verified 1 day ago &nbsp; • </span> {{deal.numberUsed}} People Used Today
+
+							<h3 class="title h1 js-title">
+								<a href="#">{{deal.description}}</a>
+							</h3>
+
+							<p class="share-expire">
+								<span class="dark-text">Expires </span> {{deal.expiration}} <span ng-show="deal.submittedBy"> • Submitted by <span class="faux-link">{{deal.submittedBy}}</span></span>
+							</p>
+
+							<div class="description-wrapper">
+								<span class="faux-link" ng-hide="showDetails" ng-click="showDetails = true">Show Details &amp; Exclusions</span>
+								<p ng-show="showDetails" class="description">
+									<span class="dark-text">Details: </span> {{deal.details}}
+								</p>
+								<p ng-show="showDetails && deal.exclusions" class="description">
+									<span class="dark-text">Exclusions: </span> {{deal.exclusions}}
+								</p>
+							</div>
+					</div>
+
+					<div class="actions js-actions" ng-model="deal.type" ng-switch on = "deal.type">
+						<div ng-switch-when="code" class="js-outclick smokey-button code-button js-attch-flash">
+							<div class="code-wrapper">
+								<span class="code-text">{{deal.code}}</span>
+							</div>
+							<div class="code-cover">Show Coupon Code</div>
+							<div class="code-fader"></div>
+							<div class="copy-icon"></div>
+						</div>
+						
+						<div ng-switch-when="printable" class="smokey-button js-outclick">Show Coupon</div>
+
+						<div ng-switch-default class="smokey-button js-outclick">Get Deal</div>
 					</div>
 				</div>
-
-				<!-- FAVORITE START -->
-				<div class="favorite-star" ng-click="favorited = !favorited" ng-class="{active:favorited}"></div>
-
-				<!-- INFO -->
-				<div class="info js-info">
-						<span class="verified" ng-if="deal.verified == true">Verified 1 day ago &nbsp; • </span> {{deal.numberUsed}} People Used Today
-
-						<h3 class="title h1 js-title">
-							<a href="#">{{deal.description}}</a>
-						</h3>
-
-						<p class="share-expire">
-							<span class="dark-text">Expires </span> {{deal.expiration}} <span ng-show="deal.submittedBy"> • Submitted by <span class="faux-link">{{deal.submittedBy}}</span></span>
-						</p>
-
-						<div class="description-wrapper">
-							<span class="faux-link" ng-hide="showDetails" ng-click="showDetails = true">Show Details &amp; Exclusions</span>
-							<p ng-show="showDetails" class="description">
-								<span class="dark-text">Details: </span> {{deal.details}}
-							</p>
-							<p ng-show="showDetails && deal.exclusions" class="description">
-								<span class="dark-text">Exclusions: </span> {{deal.exclusions}}
-							</p>
-						</div>
+				<div class="offer bottom clearfix">
+					<p class="vote-icon recommend left">{{(deal.upvote / (deal.upvote + deal.downvote))*100 | number:0}}% of Users Recommend</p>
+					<p class="right social">
+						<span class="faux-link">Email</span> <span class="spacer">•</span>
+						<span class="faux-link" ng-show="deal.comments.length">{{deal.comments.length}} 
+							<span ng-show="deal.comments.length > 1">comments</span>
+							<span ng-hide="deal.comments.length > 1">comment</span>
+						</span>
+						<span class="faux-link" ng-hide="deal.comments.length">Add a Comment</span> <span class="spacer">•</span>
+						<span class="vote-icon upvote">{{deal.upvote}}</span>
+						<span class="vote-icon downvote">{{deal.downvote}}</span>
+					</p>
 				</div>
 
-				<div class="actions js-actions" ng-model="deal.type" ng-switch on = "deal.type">
-					<div ng-switch-when="code" class="js-outclick smokey-button code-button js-attch-flash">
-						<div class="code-wrapper">
-							<span class="code-text">{{deal.code}}</span>
-						</div>
-						<div class="code-cover">Show Coupon Code</div>
-						<div class="code-fader"></div>
-						<div class="copy-icon"></div>
+				<div class=" offer information-section" ng-switch-when=0 ng-show="showSection">
+					<h3>Expert Tips: How to Save the Most at {{merchant.name}}</h3>
+					<div class="x-out" ng-click="showSection=false"></div>
+					<ul>
+						<li>Always get <strong>Free Shipping</strong> when you spend $50 or more online</li>
+						<li>{{merchant.name}} rarely has <strong>in store shipping,</strong> <span class="faux-link">get {{merchant.name}} deal alerts</span> to find out when to get them</li>
+						<li>If you sign up for {{merchant.name}}'s weekly newsletter you will get <strong>15% OFF</strong> storewide</li>
+					</ul>
+					
+				</div>
+
+				<div id="user-ticker" class="marquee" ng-switch-when=3>
+						There are <span>385</span> people viewing this page right now ......
+						The most popular deal for {{merchant.name}} today is <span>25% Off Women's Apparel</span> ......
+						Our members save an average of <span>$6</span> on each of their purchases ......
+				</div>
+
+				<div class="rmn-education search-experts" ng-switch-when=6>
+					<p>Over 400 people at Brand search the web everyday to find deals <br>- So you don't have to</p>
+				</div>
+
+				<div class="rmn-education community" ng-switch-when=9 ng-show="showSection">
+					<div class="x-out" ng-click="showSection=false"></div>
+					<div class="community">
+						<p>Can't find the perfect coupon? Chat directly with active community members right now!</p>
+						<p class="faux-link">Go to Community Chat</p>
 					</div>
 					
-					<div ng-switch-when="printable" class="smokey-button js-outclick">Show Coupon</div>
-
-					<div ng-switch-default class="smokey-button js-outclick">Get Deal</div>
 				</div>
 			</div>
-			<div class="offer bottom clearfix">
-				<p class="vote-icon recommend left">{{(deal.upvote / (deal.upvote + deal.downvote))*100 | number:0}}% of Users Recommend</p>
-				<p class="right social">
-					<span class="faux-link">Email</span> <span class="spacer">•</span>
-					<span class="faux-link" ng-show="deal.comments.length">{{deal.comments.length}} 
-						<span ng-show="deal.comments.length > 1">comments</span>
-						<span ng-hide="deal.comments.length > 1">comment</span>
-					</span>
-					<span class="faux-link" ng-hide="deal.comments.length">Add a Comment</span> <span class="spacer">•</span>
-					<span class="vote-icon upvote">{{deal.upvote}}</span>
-					<span class="vote-icon downvote">{{deal.downvote}}</span>
-				</p>
+					
+		</div>
+
+
+			
+
+
+	<div class="minor">
+
+		<div class="no-portrait">
+			<!-- LOGO -->
+			<a href="#" class="logo-wrapper js-outclick-merchant-logo">
+				<img ng-src="{{merchant.logo}}" alt="">
+			</a>
+
+			<!-- FILTERS -->
+			<div class="radio-filters">
+				<input type="radio" ng-model="typeFilter" id="all" value="">
+				<label for="all">All <span ng-repeat="deal in all = (deals | filter: {type:''})"></span> ({{all.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="code" value="code">
+				<label for="code">Promo Codes <span ng-repeat="deal in codes = (deals | filter: {type:'code'})"></span> ({{codes.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="sale" value="sale">
+				<label for="sale">Sales <span ng-repeat="deal in sales = (deals | filter: {type:'sale'})"></span> ({{sales.length}})
+				</label>
+
+				<input type="radio" ng-model="typeFilter" id="printable" value="printable">
+				<label for="printable">Printables <span ng-repeat="deal in printables = (deals | filter: 'printable')"></span> ({{printables.length}})
+				</label> 
 			</div>
 
-			<div class=" offer information-section" ng-switch-when=0 ng-show="showSection">
-				<h3>Expert Tips: How to Save the Most at {{merchant.name}}</h3>
-				<div class="x-out" ng-click="showSection=false"></div>
+			<!--  COMMUNITY -->
+			<div class="community-activity">
+				<h3 class="center">Community Activity</h3>
 				<ul>
-					<li>Always get <strong>Free Shipping</strong> when you spend $50 or more online</li>
-					<li>{{merchant.name}} rarely has <strong>in store shipping,</strong> <span class="faux-link">get {{merchant.name}} deal alerts</span> to find out when to get them</li>
-					<li>If you sign up for {{merchant.name}}'s weekly newsletter you will get <strong>15% OFF</strong> storewide</li>
+					<li class="upvote">
+						<div class="update">Up to $50 Off Fall Décor was voted up</div>
+						<div class="time-ago">1 hour ago</div>
+					</li>
+					<li class="upvote">
+						<div class="update">Up to 15% Off Sitewide was voted up</div>
+						<div class="time-ago">1 hour ago</div>
+					</li>
+					<li class="downvote">
+						<div class="update">Extra 15% Off Back to School Supplies was voted down</div>
+						<div class="time-ago">2 hour ago</div>
+					</li>
+					<li class="comment">
+						<div class="update">"Doesn't work on laptops" added toExtra 15% Off Back to School Supplies</div>
+						<div class="time-ago">2 hour ago</div>
+					</li>
+					<li class="upvote">
+						<div class="update">Save 20% on Halloween Candy was voted up</div>
+						<div class="time-ago">3 hour ago</div>
+					</li>
+					<li class="downvote">
+						<div class="update">Up to 15% Off Sitewide was voted up</div>
+						<div class="time-ago">3 hour ago</div>
+					</li>
 				</ul>
-				
-			</div>
-
-			<div id="user-ticker" class="marquee" ng-switch-when=3>
-					There are <span>385</span> people viewing this page right now ......
-					The most popular deal for {{merchant.name}} today is <span>25% Off Women's Apparel</span> ......
-					Our members save an average of <span>$6</span> on each of their purchases ......
-			</div>
-
-			<div class="rmn-education search-experts" ng-switch-when=6>
-				<p>Over 400 people at Brand search the web everyday to find deals <br>- So you don't have to</p>
-			</div>
-
-			<div class="rmn-education community" ng-switch-when=9 ng-show="showSection">
-				<div class="x-out" ng-click="showSection=false"></div>
-				<div class="community">
-					<p>Can't find the perfect coupon? Chat directly with active community members right now!</p>
-					<p class="faux-link">Go to Community Chat</p>
+				<div class="join-community">
+					<p class="faux-link center">Join the Brand Community</p>
 				</div>
-				
 			</div>
-		</div>
-				
-	</div>
+			<!-- Submit Stuff -->
+			<div class="submit-coupon"> 
+				<h3 class="h4">Submit a new coupon and help others save!</h3> 
+				<form name="couponsubmit" id="couponSubmit"> 
+					<div class="field"> <span class="domain">{{merchant.name}}</span> <p class="hide js-diff-store diff-store"> <a href="/submit">Submit for a different store</a> </p> </div> 
+					<div class="field"> 
+						<select class="offerType" name="offerType"> 
+							<option value="code" selected="selected" data-coupon-type-plural="coupon codes">Coupon code</option> 
+							<option value="printable" data-coupon-type-plural="printable coupons">Printable coupon</option> 
+							<option value="tip" data-coupon-type-plural="sales/shopping tips">Sale/Shopping Tip</option> 
+						</select> 
+					</div> 
+					<fieldset class="submit-code "> 
+						<div class="field"> 
+							<input type="text" class="f_code" name="f_code" placeholder="Code" autocomplete="off"> 
+						</div> <div class="field"> <textarea class="f_description" name="f_description" placeholder="Discount Description"></textarea> </div> </fieldset> <fieldset class="submit-tip hide"> 
+						<div class="field"> 
+							<textarea class="ft_tip" name="ft_tip" placeholder="Discount Description"></textarea> 
+						</div> 
+					</fieldset> 
+					<fieldset class="submit-printable hide"> 
+						<div class="field"> 
+							<input type="text" class="fp_url" name="fp_url" maxlength="255" value="" placeholder="Enter link to coupon"> 
+						</div> 
+						<div class="field"> 
+							<textarea class="fp_description" name="fp_description" placeholder="Discount Description"></textarea> 
+						</div> 
+					</fieldset> 
+					<div class="field hide expires-field"> 
+						<input class="expires" type="text" placeholder="Expiration (optional)" name="expires"> <span class="expires-icon js-calendar"></span> 
+					</div> 
+					<div class="field captcha hide"> 
+						<img width="100%" class="captchaImage js-captcha" alt="Captcha Image"> 
+						<input type="text" class="captcha-word" name="captcha-word" autocomplete="off" placeholder="Please enter word above"> 
+					</div> 
+					<button type="button" class="js-submit submit">Submit This Coupon</button> 
+				</form>
+			</div>
 
+			<!-- RMN STORIES -->
+			<div class="rmn-stories">
+				<h3 class="center">Brand Stories</h3>
+				<ul>
+					<li>
+						<div class="avatar" style="background-image: url(images/avatars/cat.jpg);"></div>
+						<div class="user center">catgirl1985</div>
+						<div class="comment center">"Best coupon site around!  I user Brand to find savings for my entire family! Love the app too!"</div>
+					</li>
+
+					<li>
+						<div class="avatar" style="background-image: url(images/avatars/basic.jpg);"></div>
+						<div class="user center">jesse_c</div>
+						<div class="comment center">"Whenever I'm shopping online I always check Brand to see if I can save some $$$!"</div>
+					</li>
+
+					<li>
+						<div class="avatar" style="background-image: url(images/avatars/sloth.jpg);"></div>
+						<div class="user center">3toes</div>
+						<div class="comment center">"I use Brand every Black Friday so I can figure out where the best deals are!"</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- ANIMATION THING -->
+
+			<div class="coupon-animation"></div>
+			<h3 class="center">How does a Coupon Make it to Brand?</h3>
+			<div id="taggy1" zum-waypoint="taggy1" down="scrolled.down" offset="150px" ng-class="{scrolled : taggy1.scrolled.down}">
+				<h4>We start by sifting through <strong>2 MILLION COUPONS</strong></h4>
+				<img src="images/taggy1.png" alt="">
+			</div>
+			
+			<div id="taggy2" zum-waypoint="taggy2" down="scrolled.down" offset="75px">
+				<div class="message-container" ng-class="{scrolled : taggy1.scrolled.down, move1 : taggy2.scrolled.down}">
+					<div class="header-container">
+						<h4 class="animation-headline center" ng-class="{active : !taggy2.scrolled.down, right: taggy2.scrolled.down}">After we take out all the junk coupons we're left with about <span>900,000 COUPONS</span></h4>
+						<h4 class="animation-headline center" ng-class="{active : taggy2.scrolled.down}">Then we cut that number in half to get you the best coupons that work every time</h4>
+					</div>
+					<div class="taggies">
+						<img src="images/top-taggy.png" class="top" ng-class="{dancer : taggy2.scrolled.down}">
+						<img src="images/right-taggy.png" class="hide1">
+						<img src="images/bottom-taggy.png" class="hide1">
+						<img src="images/left-taggy.png" class="hide2">
+						<img src="images/confetti.png" class="confetti show">
+					</div>
+				</div>
+			</div>
+			
+		</div>
 
 		
-
-</div>
-
-<div class="minor">
-
-	<div class="no-portrait">
-		<!-- LOGO -->
-		<a href="#" class="logo-wrapper js-outclick-merchant-logo">
-			<img ng-src="{{merchant.logo}}" alt="">
-		</a>
-
-		<!-- FILTERS -->
-		<div class="radio-filters">
-			<input type="radio" ng-model="typeFilter" id="all" value="">
-			<label for="all">All <span ng-repeat="deal in all = (deals | filter: {type:''})"></span> ({{all.length}})
-			</label>
-
-			<input type="radio" ng-model="typeFilter" id="code" value="code">
-			<label for="code">Promo Codes <span ng-repeat="deal in codes = (deals | filter: {type:'code'})"></span> ({{codes.length}})
-			</label>
-
-			<input type="radio" ng-model="typeFilter" id="sale" value="sale">
-			<label for="sale">Sales <span ng-repeat="deal in sales = (deals | filter: {type:'sale'})"></span> ({{sales.length}})
-			</label>
-
-			<input type="radio" ng-model="typeFilter" id="printable" value="printable">
-			<label for="printable">Printables <span ng-repeat="deal in printables = (deals | filter: 'printable')"></span> ({{printables.length}})
-			</label> 
-		</div>
-
-		<!--  COMMUNITY -->
-		<div class="community-activity">
-			<h3 class="center">Community Activity</h3>
-			<ul>
-				<li class="upvote">
-					<div class="update">Up to $50 Off Fall Décor was voted up</div>
-					<div class="time-ago">1 hour ago</div>
-				</li>
-				<li class="upvote">
-					<div class="update">Up to 15% Off Sitewide was voted up</div>
-					<div class="time-ago">1 hour ago</div>
-				</li>
-				<li class="downvote">
-					<div class="update">Extra 15% Off Back to School Supplies was voted down</div>
-					<div class="time-ago">2 hour ago</div>
-				</li>
-				<li class="comment">
-					<div class="update">"Doesn't work on laptops" added toExtra 15% Off Back to School Supplies</div>
-					<div class="time-ago">2 hour ago</div>
-				</li>
-				<li class="upvote">
-					<div class="update">Save 20% on Halloween Candy was voted up</div>
-					<div class="time-ago">3 hour ago</div>
-				</li>
-				<li class="downvote">
-					<div class="update">Up to 15% Off Sitewide was voted up</div>
-					<div class="time-ago">3 hour ago</div>
-				</li>
-			</ul>
-			<div class="join-community">
-				<p class="faux-link center">Join the Brand Community</p>
-			</div>
-		</div>
-		<!-- Submit Stuff -->
-		<div class="submit-coupon"> 
-			<h3 class="h4">Submit a new coupon and help others save!</h3> 
-			<form name="couponsubmit" id="couponSubmit"> 
-				<div class="field"> <span class="domain">{{merchant.name}}</span> <p class="hide js-diff-store diff-store"> <a href="/submit">Submit for a different store</a> </p> </div> 
-				<div class="field"> 
-					<select class="offerType" name="offerType"> 
-						<option value="code" selected="selected" data-coupon-type-plural="coupon codes">Coupon code</option> 
-						<option value="printable" data-coupon-type-plural="printable coupons">Printable coupon</option> 
-						<option value="tip" data-coupon-type-plural="sales/shopping tips">Sale/Shopping Tip</option> 
-					</select> 
-				</div> 
-				<fieldset class="submit-code "> 
-					<div class="field"> 
-						<input type="text" class="f_code" name="f_code" placeholder="Code" autocomplete="off"> 
-					</div> <div class="field"> <textarea class="f_description" name="f_description" placeholder="Discount Description"></textarea> </div> </fieldset> <fieldset class="submit-tip hide"> 
-					<div class="field"> 
-						<textarea class="ft_tip" name="ft_tip" placeholder="Discount Description"></textarea> 
-					</div> 
-				</fieldset> 
-				<fieldset class="submit-printable hide"> 
-					<div class="field"> 
-						<input type="text" class="fp_url" name="fp_url" maxlength="255" value="" placeholder="Enter link to coupon"> 
-					</div> 
-					<div class="field"> 
-						<textarea class="fp_description" name="fp_description" placeholder="Discount Description"></textarea> 
-					</div> 
-				</fieldset> 
-				<div class="field hide expires-field"> 
-					<input class="expires" type="text" placeholder="Expiration (optional)" name="expires"> <span class="expires-icon js-calendar"></span> 
-				</div> 
-				<div class="field captcha hide"> 
-					<img width="100%" class="captchaImage js-captcha" alt="Captcha Image"> 
-					<input type="text" class="captcha-word" name="captcha-word" autocomplete="off" placeholder="Please enter word above"> 
-				</div> 
-				<button type="button" class="js-submit submit">Submit This Coupon</button> 
-			</form>
-		</div>
-
-		<!-- RMN STORIES -->
-		<div class="rmn-stories">
-			<h3 class="center">Brand Stories</h3>
-			<ul>
-				<li>
-					<div class="avatar" style="background-image: url(images/avatars/cat.jpg);"></div>
-					<div class="user center">catgirl1985</div>
-					<div class="comment center">"Best coupon site around!  I user Brand to find savings for my entire family! Love the app too!"</div>
-				</li>
-
-				<li>
-					<div class="avatar" style="background-image: url(images/avatars/basic.jpg);"></div>
-					<div class="user center">jesse_c</div>
-					<div class="comment center">"Whenever I'm shopping online I always check Brand to see if I can save some $$$!"</div>
-				</li>
-
-				<li>
-					<div class="avatar" style="background-image: url(images/avatars/sloth.jpg);"></div>
-					<div class="user center">3toes</div>
-					<div class="comment center">"I use Brand every Black Friday so I can figure out where the best deals are!"</div>
-				</li>
-			</ul>
-		</div>
-
-		<!-- ANIMATION THING -->
-
-		<div class="coupon-animation"></div>
-		<h3 class="center">How does a Coupon Make it to Brand?</h3>
-		<div id="taggy1" zum-waypoint="taggy1" down="scrolled.down" offset="150px" ng-class="{scrolled : taggy1.scrolled.down}">
-			<h4>We start by sifting through <strong>2 MILLION COUPONS</strong></h4>
-			<img src="images/taggy1.png" alt="">
-		</div>
-		
-		<div id="taggy2" zum-waypoint="taggy2" down="scrolled.down" offset="75px">
-			<div class="message-container" ng-class="{scrolled : taggy1.scrolled.down, move1 : taggy2.scrolled.down}">
-				<div class="header-container">
-					<h4 class="animation-headline center" ng-class="{active : !taggy2.scrolled.down, right: taggy2.scrolled.down}">After we take out all the junk coupons we're left with about <span>900,000 COUPONS</span></h4>
-					<h4 class="animation-headline center" ng-class="{active : taggy2.scrolled.down}">Then we cut that number in half to get you the best coupons that work every time</h4>
-				</div>
-				<div class="taggies">
-					<img src="images/top-taggy.png" class="top" ng-class="{dancer : taggy2.scrolled.down}">
-					<img src="images/right-taggy.png" class="hide1">
-					<img src="images/bottom-taggy.png" class="hide1">
-					<img src="images/left-taggy.png" class="hide2">
-					<img src="images/confetti.png" class="confetti show">
-				</div>
-			</div>
-		</div>
 		
 	</div>
-
-	
-	
 </div>
 
 <script>
