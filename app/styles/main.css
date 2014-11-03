@@ -1,0 +1,1026 @@
+@import url(store-c83f73a3.min.css);
+@import url(store_redemption-28278658.min.css);
+@import url(store_support-a26c0b69.min.css);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\000031}}
+.additional-anchor {
+  text-transform: capitalize;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\000035}}
+.email-button, .text-button {
+  margin-left: -4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\000039}}
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  height: 88px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000315}}
+.flip-container.flipped .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000322}}
+.flipper {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000332}}
+.face {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: auto;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000345}}
+.face.front {
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000347}}
+.face.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000353}}
+.face.back h3 {
+  margin-top: 1em;
+  margin-bottom: .25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000356}}
+.face.back.empty {
+  background-color: #602D6C;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000358}}
+.face.back .anchor-image {
+  color: #8BBC40;
+  background-color: white;
+  border-color: #8BBC40;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000363}}
+.face.back .anchor-image .anchor-med-text {
+  line-height: 48px;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000367}}
+.face.back .additional-anchor {
+  color: #8BBC40;
+  background-color: #F2FDE2;
+  border-color: #8BBC40;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000373}}
+.offer.printable .face.back .anchor-med-text {
+  font-size: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000377}}
+.store-heading-text {
+  padding: 0 0 12px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000381}}
+.store-heading-text h1 {
+  padding-bottom: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000385}}
+.store-heading-text p {
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000389}}
+.major-header.secondary {
+  padding-top: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000391}}
+.half {
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000395}}
+.left {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\0000399}}
+.right {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003103}}
+.full {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003107}}
+.show-codes-callout {
+  border: 1px solid #CDE1B0;
+  width: 100%;
+  padding: .5em;
+  background: #E3EDD2;
+  vertical-align: middle;
+  height: 60px;
+  line-height: 36px;
+  margin: 0 -18px 10px -8px;
+  width: 786px;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003120}}
+.show-codes {
+  width: auto;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003125}}
+.show-codes.clicked {
+  padding-left: 38px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003128}}
+.show-codes.clicked:before {
+  background-image: url(../img/smokey_alt-s5a9f2a7d91.png);
+  background-position: 0px -705px;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 10px;
+  top: 11px;
+  content: '';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003139}}
+.smokey-button.green {
+  background: #6CA41B;
+  border-color: #518C00;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 0 #90D72C;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003146}}
+.small-text {
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003148}}
+.hover-target {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003152}}
+.hover-menu {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -185px;
+  background: white;
+  width: 370px;
+  border: 1px solid #DDDDDA;
+  border-radius: 3px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003164}}
+.hover-target input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003169}}
+.hover-target input[type=checkbox]:checked + .hover-menu {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003173}}
+.hover-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003180}}
+.hover-menu ul:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  bottom: -15px;
+  content: "";
+  left: 50%;
+  margin-left: -15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003193}}
+.hover-menu ul:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #DDDDDA transparent transparent transparent;
+  position: absolute;
+  bottom: -16px;
+  content: "";
+  left: 50%;
+  margin-left: -15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003206}}
+.hover-menu ul li {
+  display: inline-block;
+  width: 31%;
+  margin-right: 1%;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003213}}
+.hover-menu ul li a, .hover-target a {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003218}}
+.hover-menu ul li:nth-child(3n+0) {
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003222}}
+.radio-filters input[type="radio"] {
+  position: absolute;
+  left: -1000px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003227}}
+.radio-filters input[type="radio"] + label {
+  display: block;
+  padding: 6px 12px;
+  text-transform: capitalize;
+  color: #349dc5;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003235}}
+.radio-filters input[type="radio"]:checked + label {
+  border-radius: 6px;
+  background-color: #d6d6d9;
+  margin-right: 18px;
+  color: #666;
+  font-weight: 700;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003244}}
+.radio-filters input[type="radio"]:checked + label:after {
+  content: '';
+  position: absolute;
+  border-left: 18px solid #d6d6d9;
+  border-right: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-top: 18px solid transparent;
+  top: 0;
+  right: -32px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003255}}
+#toggle-verify {
+  font-size: 16px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003261}}
+.verification-blurb {
+  text-align: center;
+  padding: 30px 0px 30px;
+  border-top: 1px solid #DBDBD8;
+  border-bottom: 1px solid #DBDBD8;
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003269}}
+.verification-blurb img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003275}}
+.verification-blurb h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003281}}
+.power-filters h3 {
+  font-size: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003285}}
+.power-filters h4 {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003289}}
+.filter-group {
+  margin-top: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003293}}
+.filter-group input {
+  margin-left: 3px;
+  margin-top: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003298}}
+.filter-group label {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003303}}
+.filter-group input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: #625F5D;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003308}}
+.no-deals h1.site-title {
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003314}}
+.no-deals h2 {
+  font-size: 18px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003321}}
+.offer.small {
+  min-height: 60px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003327}}
+.offer.small p {
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003331}}
+.other-store-offer {
+  float: left;
+  width: 17.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003335}}
+.other-store-offer.big {
+  width: 62%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003339}}
+.other-store-offer.right {
+  float: right;
+  width: 20.5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003344}}
+.other-store-offer h1 {
+  font-size: 22px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003348}}
+.signup-area {
+  padding: 30px 0;
+  border-bottom: 1px solid #d8d8dB;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003353}}
+.signup-area input[type="email"] {
+  width: 300px;
+  padding: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003358}}
+.subscribe {
+  margin: 0 auto;
+  width: 444px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003363}}
+.signup-check label {
+  font-size: 12px;
+  color: #898989;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003368}}
+.signup-check {
+  padding: 10px 0 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003372}}
+.signup-area .smokey-button {
+  font-size: 16px;
+  width: auto;
+  margin-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003378}}
+ul.logo-wrapper-wrapper {
+  margin: 0;
+  padding: 20px 0 30px;
+  list-style: none;
+  border-bottom: 1px solid #D8D8DB;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003385}}
+.logo-wrapper-wrapper .logo-wrapper {
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003389}}
+ul.logo-wrapper-wrapper li {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003394}}
+.center {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003398}}
+.site-title span {
+  font-size: 12px;
+  vertical-align: baseline;
+  color: #898989;
+  padding-left: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003405}}
+ul.logo-wrapper-wrapper li:last-child {
+  display: inline-block;
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_previous\.scss}line{font-family:\00003411}}
+.image-container {
+  width: 700px;
+  margin: auto;
+}
+
+@-webkit-keyframes dance {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes dance {
+  0% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000316}}
+#taggy1 {
+  width: 100%;
+  text-align: center;
+  height: 350px;
+  background: url(../images/hole.png) no-repeat center bottom;
+  padding-top: 0px;
+  position: relative;
+  transition: padding 3s linear;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000325}}
+#taggy1 h4 {
+  transition: .5s .5s;
+  padding-bottom: 30px;
+  opacity: 0;
+  margin-top: -25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000331}}
+#taggy1.scrolled {
+  padding-top: 275px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000333}}
+#taggy1.scrolled h4 {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000339}}
+#taggy2 {
+  height: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000347}}
+.message-container {
+  opacity: 1px;
+  position: absolute;
+  width: 100%;
+  top: -320px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s 3s, top 3s 3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000355}}
+.message-container.scrolled {
+  opacity: 1;
+  top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000358}}
+.message-container.scrolled .taggies img.hide1 {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000362}}
+.message-container.move1 {
+  top: 50px;
+  transition: top 2s 0s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000366}}
+.message-container.move1 .taggies img.hide2 {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000369}}
+.message-container.move1 .taggies img.show {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000374}}
+.message-container .taggies {
+  position: relative;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000377}}
+.message-container .taggies img {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000381}}
+.message-container .taggies img.top {
+  z-index: 5;
+  transition: 1s;
+  left: 45px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000385}}
+.message-container .taggies img.top.dancer {
+  -webkit-animation: dance 1s 2s linear infinite alternate backwards;
+  /* Safari 4+ */
+  -moz-animation: dance 1s 2s linear infinite alternate backwards;
+  /* Fx 5+ */
+  -o-animation: dance 1s 2s linear infinite alternate backwards;
+  /* Opera 12+ */
+  animation: dance 1s 2s linear infinite alternate backwards;
+  /* IE 10+, Fx 29+ */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000392}}
+.message-container .taggies img.hide1 {
+  opacity: 1;
+  transition: opacity 1s 6s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\0000396}}
+.message-container .taggies img.hide2 {
+  opacity: 1;
+  transition: opacity 1s 2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003100}}
+.message-container .taggies img.show {
+  opacity: 0;
+  transition: opacity 1s 2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003104}}
+.message-container .taggies img.confetti {
+  top: 10px;
+  left: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003111}}
+.header-container {
+  width: 100%;
+  position: relative;
+  height: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003116}}
+.header-container h4.animation-headline {
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  transition: 1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003123}}
+.header-container h4.animation-headline span {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003128}}
+.header-container h4.animation-headline.active {
+  top: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/_animation\.scss}line{font-family:\00003132}}
+.header-container h4.animation-headline.right {
+  left: 100%;
+}
+
+/** OTHER SITE CHECK VALUe-PROP **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\000038}}
+.fake-header {
+  width: 100%;
+  height: 114px;
+  background: #c2c2c2;
+  line-height: 114px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000318}}
+.value-prop {
+  padding-left: 32px;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000324}}
+.value-prop:after {
+  position: absolute;
+  left: 0;
+  background-image: url(../images/ourbest.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000333}}
+.value-prop.everyday:after {
+  background-image: url(../images/everyday.png);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000338}}
+.major-header {
+  padding-bottom: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000340}}
+.major-header .site-title {
+  padding-bottom: 9px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000345}}
+.description:after {
+  content: '';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000349}}
+.actions {
+  margin-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000355}}
+.offer .favorite-star {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background: url("../images/star-outline.png") 0 0 no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000363}}
+.offer .favorite-star.active {
+  background: url("../images/star-filled.png") 0 0 no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000367}}
+.offer.top {
+  border-radius: 3px 3px 0 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000372}}
+.offer.bottom {
+  min-height: 30px;
+  border-radius: 0 0 3px 3px;
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000376}}
+.offer.bottom p {
+  font-size: 14px;
+  position: relative;
+  line-height: 18px;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000381}}
+.offer.bottom p.recommend, .offer.bottom p.social {
+  width: 45%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000384}}
+.offer.bottom p.social {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000386}}
+.offer.bottom p.social .spacer {
+  color: #B5B5B5;
+  margin: 0 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000392}}
+.offer.bottom .vote-icon {
+  padding-left: 20px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\0000395}}
+.offer.bottom .vote-icon:before {
+  height: 18px;
+  width: 16px;
+  position: relative;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003105}}
+.offer.bottom .vote-icon.downvote {
+  margin-left: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003108}}
+.offer.bottom .vote-icon.recommend:before {
+  background: url(../images/smokey_alt-s5a9f2a7d91.png) 0 -810px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003111}}
+.offer.bottom .vote-icon.upvote:before {
+  background: url(../images/smokey_alt-s5a9f2a7d91.png) 0 -788px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003114}}
+.offer.bottom .vote-icon.downvote:before {
+  background: url(../images/smokey_alt-s5a9f2a7d91.png) 0 -832px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003120}}
+.offer.exclusive.bottom p:before {
+  background-image: url(../images/smokey_alt-s5a9f2a7d91.png);
+  background-position: 0 -282px;
+  position: absolute;
+  height: 26px;
+  width: 24px;
+  content: "";
+  left: 21px;
+  top: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003133}}
+.information-section {
+  background: #e4e4e4;
+  width: 786px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  max-height: 200px;
+  transition: max-height .5s;
+  overflow: hidden;
+  padding: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003143}}
+.information-section.ng-hide {
+  max-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003146}}
+.information-section h3 {
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003149}}
+.information-section ul {
+  list-style-image: url(../images/checkmark.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003152}}
+.information-section li {
+  line-height: 20px;
+  vertical-align: top;
+  padding: 10px 10px 0;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003157}}
+.information-section li strong, .information-section li span {
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003161}}
+.information-section .x-out {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 20px;
+  height: 20px;
+  background: url(../images/x-out.png) no-repeat center center;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003171}}
+.information-section .community {
+  padding-left: 80px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003173}}
+.information-section .community p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003177}}
+.information-section .community p.faux-link {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003184}}
+.rmn-education {
+  padding-left: 82px;
+  margin: 16px auto;
+  position: relative;
+  min-height: 58px;
+  width: 95%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003190}}
+.rmn-education p {
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003193}}
+.rmn-education.community {
+  background: url(../images/community-chat_03.png) no-repeat top left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003196}}
+.rmn-education.search-experts {
+  background: url(../images/search-big.png) no-repeat top left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003202}}
+.community-activity {
+  padding-top: 16px;
+  border-top: 1px solid #d9d9d6;
+  margin-top: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003206}}
+.community-activity ul {
+  list-style: none;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003209}}
+.community-activity ul li {
+  padding-left: 26px;
+  padding-bottom: 16px;
+  position: relative;
+  border-bottom: 1px solid #d9d9d6;
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003215}}
+.community-activity ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 16px;
+  content: "";
+  background-image: url(../images/smokey_alt-s5a9f2a7d91.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003224}}
+.community-activity ul li.upvote:before {
+  background-position: 0 -810px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003227}}
+.community-activity ul li.downvote:before {
+  background-position: 0 -854px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003230}}
+.community-activity ul li.comment:before {
+  background-position: 0 -766px;
+  height: 20px;
+  width: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003237}}
+.community-activity .update {
+  font-size: 12px;
+  line-height: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003241}}
+.community-activity .time-ago {
+  font-size: 11px;
+  font-style: italic;
+  color: #676767;
+  line-height: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003247}}
+.community-activity .join-community {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003251}}
+.community-activity .join-community p {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003257}}
+.rmn-stories {
+  padding-top: 16px;
+  border-bottom: 1px solid #d9d9d6;
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003261}}
+.rmn-stories ul {
+  padding: 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003264}}
+.rmn-stories ul li {
+  margin-bottom: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003268}}
+.rmn-stories .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid #d9d9d6;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 4px;
+  background-position: center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003278}}
+.rmn-stories .user {
+  font-size: 14px;
+  color: #676767;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003283}}
+.rmn-stories .comment {
+  font-size: 14px;
+  color: #222;
+  line-height: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003290}}
+.marquee {
+  width: 783px;
+  position: relative;
+  overflow: hidden;
+  margin: 8px 0 8px -7px;
+  background: #4C4C4C;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 12px 0;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003301}}
+.marquee span {
+  color: #7AB320;
+}

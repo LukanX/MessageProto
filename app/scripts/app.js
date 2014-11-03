@@ -21,11 +21,11 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/views/merchants.html',
+        templateUrl: 'views/merchants.html',
         controller: 'merchantListCtrl'
       })
       .when('/merchants', {
-        templateUrl: '/views/merchants.html',
+        templateUrl: 'views/merchants.html',
         controller: 'merchantListCtrl'
       })
       .when('/design1/:merchantId', {
