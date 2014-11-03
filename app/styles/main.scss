@@ -1,0 +1,307 @@
+@import "store-c83f73a3.min.css";
+@import "store_redemption-28278658.min.css";
+@import "store_support-a26c0b69.min.css";
+@import "previous";
+@import "animation";
+
+/** OTHER SITE CHECK VALUe-PROP **/
+.fake-header{
+  width: 100%;
+  height: 114px;
+  background: #c2c2c2;
+  line-height: 114px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.value-prop{
+  padding-left: 32px;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  &:after{
+    position:absolute;
+    left: 0;
+    background-image: url(../images/ourbest.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    content:"";
+  }
+  &.everyday:after{
+    background-image: url(../images/everyday.png);
+  }
+}
+
+.major-header{
+  padding-bottom: 18px;
+  .site-title{
+    padding-bottom: 9px;
+  }
+}
+
+.description:after{ //Getting rid of "less" from description
+  content: '';
+}
+
+.actions{
+  margin-top: 50px;
+}
+
+// *********** Social Button ************
+.offer{
+  .favorite-star{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background: url('../images/star-outline.png') 0 0 no-repeat;
+    &.active{
+      background: url('../images/star-filled.png') 0 0 no-repeat;
+    }
+  }
+  &.top{
+    border-radius: 3px 3px 0 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  &.bottom{
+    min-height: 30px;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+    p{
+      font-size: 14px;
+      position: relative;
+      line-height: 18px;
+      vertical-align: middle;
+      &.recommend, &.social{
+        width: 45%;
+      }
+      &.social{
+        text-align: right;
+        .spacer{
+          color: #B5B5B5;
+          margin: 0 4px;
+        }
+      }
+    }
+    .vote-icon{
+      padding-left: 20px;
+      position: relative;
+      &:before{
+        height: 18px;
+        width: 16px;
+        position: relative;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+      &.downvote{
+        margin-left: 4px;
+      }
+      &.recommend:before{
+        background: url(../images/smokey_alt-s5a9f2a7d91.png) 0 -810px;
+      }
+      &.upvote:before{
+        background: url(../images/smokey_alt-s5a9f2a7d91.png) 0 -788px;
+      }
+      &.downvote:before{
+        background: url(../images/smokey_alt-s5a9f2a7d91.png) 0 -832px;
+      }
+    }
+  }
+}
+.offer.exclusive.bottom p:before{
+  background-image: url(../images/smokey_alt-s5a9f2a7d91.png);
+  background-position: 0 -282px;
+  position: absolute;
+  height: 26px;
+  width: 24px;
+  content:"";
+  left: 21px;
+  top: 0px;
+}
+
+// CHEAT SHEET
+
+.information-section{
+  background: #e4e4e4;
+  width: 786px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  max-height: 200px;
+  transition: max-height .5s;
+  overflow: hidden;
+  padding: 1.5em;
+  &.ng-hide{
+    max-height: 0;
+  }
+  h3{
+    font-size: 20px;
+  }
+  ul{
+    list-style-image: url(../images/checkmark.png);
+  }
+  li{
+    line-height: 20px;
+    vertical-align: top;
+    padding: 10px 10px 0;
+    font-size: 16px;
+    strong, span{
+      vertical-align: top;
+    }
+  }
+  .x-out{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 20px;
+    height: 20px;
+    background: url(../images/x-out.png) no-repeat center center;
+    cursor: pointer;
+  }
+
+  .community{
+    padding-left: 80px;
+    p{
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
+      &.faux-link{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.rmn-education{
+  padding-left: 82px;
+  margin: 16px auto;
+  position: relative;
+  min-height: 58px;
+  width: 95%;
+  p{
+    font-size: 14px;
+  }
+  &.community{
+    background: url(../images/community-chat_03.png) no-repeat top left;
+  }
+  &.search-experts{
+    background: url(../images/search-big.png) no-repeat top left;
+  }
+}
+
+// COMMUNITY ACTIVITY
+.community-activity{
+  padding-top: 16px;
+  border-top: 1px solid #d9d9d6;
+  margin-top: 16px;
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      padding-left: 26px;
+      padding-bottom: 16px;
+      position: relative;
+      border-bottom: 1px solid #d9d9d6;
+      margin-bottom: 16px;
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 16px;
+        content: "";
+        background-image: url(../images/smokey_alt-s5a9f2a7d91.png);
+      }
+      &.upvote:before{
+        background-position: 0 -810px;
+      }
+      &.downvote:before{
+        background-position: 0 -854px;
+      }
+      &.comment:before{
+        background-position: 0 -766px;
+        height: 20px;
+        width: 18px;
+      }
+    }
+  }
+  .update{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .time-ago{
+    font-size: 11px;
+    font-style: italic;
+    color: #676767;
+    line-height: 16px;
+  }
+  .join-community{
+    padding-top: 8px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d9d9d6;
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.rmn-stories{
+  padding-top: 16px;
+  border-bottom: 1px solid #d9d9d6;
+  margin-bottom: 16px;
+  ul{
+    padding: 0;
+    list-style: none;
+    li{
+      margin-bottom: 24px;
+    }
+  }
+  .avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid #d9d9d6;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 4px;
+    background-position: center center;
+  }
+  .user{
+    font-size: 14px;
+    color: #676767;
+    font-weight: bold;
+  }
+  .comment{
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+  }
+}
+
+.marquee{
+  width: 783px;
+  position: relative;
+  overflow: hidden;
+  margin: 8px 0 8px -7px;
+  background: #4C4C4C;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 12px 0;
+  vertical-align: middle;
+  span{
+    color: #7AB320;
+  }
+}
+
+
+

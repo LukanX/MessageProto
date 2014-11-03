@@ -1,0 +1,138 @@
+
+
+
+
+@-webkit-keyframes dance {
+  0%   { transform: rotate(0deg); }
+  50%   { transform: rotate(25deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+@keyframes dance {
+  0%   { transform: rotate(25deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+#taggy1{
+	width: 100%;
+	text-align: center;
+	height: 350px;
+	background: url(../images/hole.png) no-repeat center bottom;
+	padding-top: 0px;
+	position: relative;
+	transition: padding 3s linear;
+	overflow: hidden;
+	h4{
+		transition: .5s .5s;
+		padding-bottom: 30px;
+		opacity: 0;
+		margin-top: -25px;
+	}
+	&.scrolled{
+		padding-top: 275px;
+		h4{
+			opacity: 1;
+		}
+	}
+}
+
+#taggy2{
+	height: 20px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+}
+
+.message-container{
+	opacity: 1px;
+	position: absolute;
+	width: 100%;
+	top: -320px;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1.5s 3s, top 3s 3s; 
+	&.scrolled{
+		opacity: 1;
+		top: 20px;
+		.taggies img.hide1{
+			opacity: 0;
+		}
+	}
+	&.move1{
+		top: 50px;
+		transition: top 2s 0s;
+		.taggies img{
+			&.hide2{
+				opacity: 0;
+			}
+			&.show{
+				opacity: 1;
+			}
+		}
+	}
+	.taggies{
+		position: relative;
+		text-align: center;
+		img{
+			position: absolute;
+			top: 20px;
+			left: 30px; 
+			&.top{
+				z-index: 5;
+				transition: 1s;
+				left: 45px;
+				&.dancer{
+					-webkit-animation: dance 1s 2s linear infinite alternate backwards; /* Safari 4+ */
+				  -moz-animation:    dance 1s 2s linear infinite alternate backwards; /* Fx 5+ */
+				  -o-animation:      dance 1s 2s linear infinite alternate backwards; /* Opera 12+ */
+				  animation:         dance 1s 2s linear infinite alternate backwards; /* IE 10+, Fx 29+ */
+				}
+			}
+			&.hide1{
+				opacity: 1;
+				transition: opacity 1s 6s;
+			}
+			&.hide2{
+				opacity: 1;
+				transition: opacity 1s 2s;
+			}
+			&.show{
+				opacity: 0;
+				transition: opacity 1s 2s;
+			}
+			&.confetti{
+				top: 10px;
+				left: 40px;
+			}
+		}
+	}
+}
+.header-container{
+	width: 100%;
+	position: relative;
+	height: 60px;
+
+	h4.animation-headline{
+		font-size: 14px;
+		line-height: 16px;
+		position: absolute;
+		width: 100%;
+		left: -100%;
+		transition: 1s;
+		span{
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 20px;
+		}
+		&.active{
+			top: 0;
+			left: 0;
+		}
+		&.right{
+			left: 100%;
+		}
+	}
+}
+
+
