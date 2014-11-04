@@ -576,3 +576,9 @@ ul.top-coupons{
     }
   }
 }
+
+.site-ftr{
+  -webkit-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+}

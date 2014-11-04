@@ -1302,3 +1302,8 @@ ul.top-coupons li span {
 .chat-alert-box .chat-section .submit-wrapper {
   margin: 16px auto;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003581}}
+.site-ftr .newsletter-wrapper {
+  background: #ddd;
+}
