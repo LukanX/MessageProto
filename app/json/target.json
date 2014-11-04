@@ -7,7 +7,7 @@
 		"details": "$50 off $250, $20 off $100 worth fall décor and select outdoor furniture. Ends 10/24/2014",
 		"exclusions": "",
 		"numberUsed": 19865,
-		"expiration": "10/24/2014",
+		"expiration": "11/24/2014",
 		"successRate": 91,
 		"availableSince": "last day",
 		"discountType": "code $off",
@@ -17,8 +17,8 @@
 		"exclusive": true,
 		"source": "RetailMeNot",
 		"submittedBy": "lcookson",
-		"upvote": 27,
-		"downvote": 18,
+		"upvote": 33,
+		"downvote": 16,
 		"comments":[
 			{
 				"comment": "Used this to buy some Thanksgiving decorations!",
@@ -40,7 +40,7 @@
 		"details": "Get an Extra 15% Off on Back To School Items. valid for new email addresses only. One coupon per customer. Ends 10/28/14",
 		"exclusions": "",
 		"numberUsed": 22153,
-		"expiration": "10/28/2014",
+		"expiration": "11/28/2014",
 		"successRate": 76,
 		"availableSince": "last week",
 		"discountType": "%off printable",
@@ -50,17 +50,17 @@
 		"exclusive": false,
 		"source": "RetailMeNot",
 		"upvote": 27,
-		"downvote": 18
+		"downvote": 19
 	},
 	{
 		"type": "code",
 		"code": "TGLPHPGHL",
 		"description": "$10 Off $50 + Free Shipping On $50",
 		"value": "$5",
-		"details": "Save $5 off a qualifying merchandise subtotal of $50 or more + free shipping on select items. Merchandise subtotal based on one shipping destination per order. Some exclusions apply. See site for details. Expires on 10/31/2014. ",
+		"details": "Save $5 off a qualifying merchandise subtotal of $50 or more + free shipping on select items. Merchandise subtotal based on one shipping destination per order. Some exclusions apply. See site for details. Expires on 11/31/2014. ",
 		"exclusions": "",
 		"numberUsed": 5949,
-		"expiration": "10/31/2014",
+		"expiration": "11/31/2014",
 		"successRate": 69,
 		"availableSince": "last week",
 		"discountType": "$off code free shipping",
@@ -70,17 +70,17 @@
 		"exclusive": false,
 		"source": "members",
 		"upvote": 27,
-		"downvote": 18
+		"downvote": 1
 	},
 	{
 		"type": "sale",
 		"code": "",
 		"description": "Up To 25% Off Women’s Apparel",
 		"value": "25%",
-		"details": "Buy 2 Save 15%, Buy 3 Save 25% on Women’s apparel. Expires on 10/08/2014.",
+		"details": "Buy 2 Save 15%, Buy 3 Save 25% on Women’s apparel. Expires on 11/08/2014.",
 		"exclusions": "",
 		"numberUsed": 709,
-		"expiration": "10/08/2014",
+		"expiration": "11/08/2014",
 		"successRate": 83,
 		"availableSince": "last week",
 		"discountType": "%off sale",
@@ -89,18 +89,18 @@
 		"best": false,
 		"exclusive": false,
 		"source": "members",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 37,
+		"downvote": 5
 	},
 	{
 		"type": "sale",
 		"code": "",
 		"description": "Up To 40% Off Purchase + Extra 10% Off Select Styles Athletic Shoes",
 		"value": "40%",
-		"details": "10%-40% Off Your purchase + Extra 10% off Select styles Athletic shoes for men and women. Ends 10/06/2014",
+		"details": "10%-40% Off Your purchase + Extra 10% off Select styles Athletic shoes for men and women. Ends 11/06/2014",
 		"exclusions": "",
 		"numberUsed": 992,
-		"expiration": "10/06/2014",
+		"expiration": "11/06/2014",
 		"successRate": 100,
 		"availableSince": "last month",
 		"discountType": "%off sale",
@@ -109,18 +109,18 @@
 		"best": false,
 		"exclusive": false,
 		"source": "social networks",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 16,
+		"downvote": 7
 	},
 	{
 		"type": "printable",
 		"code": "",
 		"description": "Save 10% on Printers and Printing Supplies",
 		"value": "10%",
-		"details": "Get an Extra 10% Off on Printers and Printing Supplies. Exludes Ink. One coupon per customer. Ends 10/28/14",
+		"details": "Get an Extra 10% Off on Printers and Printing Supplies. Exludes Ink. One coupon per customer. Ends 11/28/14",
 		"exclusions": "",
 		"numberUsed": 607,
-		"expiration": "10/10/2014",
+		"expiration": "11/11/2014",
 		"successRate": 52,
 		"availableSince": "last month",
 		"discountType": "%off printable",
@@ -129,18 +129,18 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 12,
+		"downvote": 4
 	},
 	{
 		"type": "code",
 		"code": "APPLIANCE2014",
 		"description": "$25 Off $100 Worth of Appliances",
 		"value": "$25",
-		"details": "Get an Extra $25 off appliance when you spend $100. Ends 10/31/2014",
+		"details": "Get an Extra $25 off appliance when you spend $100. Ends 11/31/2014",
 		"exclusions": "",
 		"numberUsed": 8754,
-		"expiration": "10/31/2014",
+		"expiration": "11/31/2014",
 		"successRate": 75,
 		"availableSince": "last day",
 		"discountType": "$off code",
@@ -149,18 +149,18 @@
 		"best": false,
 		"exclusive": false,
 		"source": "members",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 68,
+		"downvote": 21
 	},
 	{
 		"type": "sale",
 		"code": "",
 		"description": "50% Off + Extra 10% Off Bath Towels & Bath Rugs",
 		"value": "50%",
-		"details": "Get 50% off + extra 10% off bath towels & bath rugs. Expires on 10/24/2014.",
+		"details": "Get 50% off + extra 10% off bath towels & bath rugs. Expires on 11/24/2014.",
 		"exclusions": "",
 		"numberUsed": 516,
-		"expiration": "10/24/2014",
+		"expiration": "11/24/2014",
 		"successRate": 50,
 		"availableSince": "last month",
 		"discountType": "%off sale",
@@ -169,18 +169,18 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 10,
+		"downvote": 2
 	},
 	{
 		"type": "sale",
 		"code": "",
 		"description": "Up To 25% Off Men’s Apparel + Free Shipping",
 		"value": "25%",
-		"details": "Buy 2 Save 15%, Buy 3 Save 25% on Men’s Apparel. Expires on 10/14/2014.",
+		"details": "Buy 2 Save 15%, Buy 3 Save 25% on Men’s Apparel. Expires on 11/14/2014.",
 		"exclusions": "",
 		"numberUsed": 1800,
-		"expiration": "10/14/2014",
+		"expiration": "11/14/2014",
 		"successRate": 85,
 		"availableSince": "last week",
 		"discountType": "%off sale free shipping",
@@ -189,18 +189,18 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 70,
+		"downvote": 24
 	},
 	{
 		"type": "sale",
 		"code": "",
 		"description": "Women's Swimwear Clearance Up To 50% Off + Free Shipping",
 		"value": "50%",
-		"details": "Details: Save up to 50% off womens swimwear. Hurry, while supplies last.. Expires on 10/24/2014.",
+		"details": "Details: Save up to 50% off womens swimwear. Hurry, while supplies last.. Expires on 11/24/2014.",
 		"exclusions": "",
 		"numberUsed": 516,
-		"expiration": "10/24/2014",
+		"expiration": "11/24/2014",
 		"successRate": 50,
 		"availableSince": "last month",
 		"discountType": "%off sale free shipping",
@@ -209,8 +209,8 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 21,
+		"downvote": 9
 	},
 	{
 		"type": "code",
@@ -229,8 +229,8 @@
 		"best": false,
 		"exclusive": false,
 		"source": "members",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 37,
+		"downvote": 21
 	},
 	{
 		"type": "sale",
@@ -240,7 +240,7 @@
 		"details": "Buy One Get One 40% off Select Brands + Free shipping (no min.)",
 		"exclusions": "",
 		"numberUsed": 113,
-		"expiration": "10/11/2014",
+		"expiration": "11/11/2014",
 		"successRate": 87,
 		"availableSince": "last month",
 		"discountType": "%off sale free shipping bogo",
@@ -250,7 +250,7 @@
 		"exclusive": false,
 		"source": "retailer",
 		"upvote": 27,
-		"downvote": 18
+		"downvote": 12
 	},
 	{
 		"type": "sale",
@@ -260,7 +260,7 @@
 		"details": "10%-30% Off Your purchase + Free Shipping on orders over $20.  Ends 10/06/2014",
 		"exclusions": "",
 		"numberUsed": 1800,
-		"expiration": "10/14/2014",
+		"expiration": "11/14/2014",
 		"successRate": 100,
 		"availableSince": "last week",
 		"discountType": "sale %off free shipping",
@@ -269,8 +269,8 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 30,
+		"downvote": 2
 	},
 	{
 		"type": "sale",
@@ -280,7 +280,7 @@
 		"details": "Save up to 30% on top electronic products during the Smart Tech Sale. Limited time only!",
 		"exclusions": "",
 		"numberUsed": 183,
-		"expiration": "10/12/2014",
+		"expiration": "11/12/2014",
 		"successRate": 40,
 		"availableSince": "last month",
 		"discountType": "%off sale",
@@ -289,8 +289,8 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 35,
+		"downvote": 12
 	},
 	{
 		"type": "sale",
@@ -300,7 +300,7 @@
 		"details": "Save up to 20% on Shoes for Women. Some restrictions apply. Expires on 10/11/2014.",
 		"exclusions": "",
 		"numberUsed": 567,
-		"expiration": "10/21/2014",
+		"expiration": "11/21/2014",
 		"successRate": 100,
 		"availableSince": "last week",
 		"discountType": "%off sale",
@@ -320,7 +320,7 @@
 		"details": "Fabulous Furniture Savings: Save 12% on spend of $125; Save 15% on spend of $200; Save 20% on spend of $500. Ends 10/11/2014",
 		"exclusions": "",
 		"numberUsed": 113,
-		"expiration": "10/11/2014",
+		"expiration": "11/11/2014",
 		"successRate": 87,
 		"availableSince": "last month",
 		"discountType": "%off sale",
@@ -329,8 +329,8 @@
 		"best": false,
 		"exclusive": false,
 		"source": "retailer",
-		"upvote": 27,
-		"downvote": 18
+		"upvote": 10,
+		"downvote": 11
 	},
 	{
 		"type": "sale",
@@ -340,7 +340,7 @@
 		"details": "Fabulous Furniture Savings: Save 12% on spend of $125; Save 15% on spend of $200; Save 20% on spend of $500. Ends 10/11/2014",
 		"exclusions": "",
 		"numberUsed": 113,
-		"expiration": "10/11/2014",
+		"expiration": "11/11/2014",
 		"successRate": 87,
 		"availableSince": "last month",
 		"discountType": "%off sale",
