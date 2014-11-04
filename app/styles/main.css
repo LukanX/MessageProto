@@ -1303,7 +1303,9 @@ ul.top-coupons li span {
   margin: 16px auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003581}}
-.site-ftr .newsletter-wrapper {
-  background: #ddd;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/Dev\/1104-Messaging-Proto\/app\/styles\/main\.scss}line{font-family:\00003580}}
+.site-ftr {
+  -webkit-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
 }
